@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-color: #1b84d6;
+  --secondary-color: #07177a;
+  --white: #ffffff;
+  --shady-white: #d8e2ef;
+  --black: #252525;
+  --bg-color: #edf2f9;
+  --gray: #36454f;
+  --light-gray: #d5d5d5;
+
+  --danger-color: #dc2626;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color) !important;
+}
+
+
+/* Scrollbar Properties */
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light-gray);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--shady-white);
+}
+
+/* Logo properties */
+
+.topBarLogo .logo-details {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.topBarLogo .logo-details .icon {
+  transition: all 0.5s ease;
+}
+
+.topBarLogo .logo-details .logo_name {
+  color: #1b84d6 !important;
+  font-size: 20px;
+  font-weight: 600;
+
+  transition: all 0.5s ease;
+}
+
+/* Line Break - span */
+
+.lineBreak {
+  border-bottom: 2px solid var(--shady-white);
+  display: block;
+  margin: auto;
+}
+
+/* Input Field */
+
+.form-control:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, -1), 0 0 8px rgba(255, 0, 0, -1) !important;
+}
+
+/* Input Field - Error */
+
+/* .form-control:focus {
+  border-color: var(--danger-color) !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, -1), 0 0 8px rgba(255, 0, 0, -1) !important;
+} */
